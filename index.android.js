@@ -37,7 +37,7 @@ export default class AwesomeProject extends Component {
   }
 }
 
-const styles = StyleSheet.create({
+/*const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
@@ -54,6 +54,6 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
-});
+});*/
 
 AppRegistry.registerComponent('AwesomeProject', () => AwesomeProject);
