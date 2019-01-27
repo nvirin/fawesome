@@ -11,10 +11,16 @@ import {
   Text,
   View
 } from 'react-native';
+import { WebView } from 'react-native-webview';
 
 export default class AwesomeProject extends Component {
   render() {
     return (
+      <WebView
+        source={{uri: 'https://democuisine.nicolasvirin.com'}}
+        style={{marginTop: 20}}
+      />
+      /*
       <View style={styles.container}>
         <Text style={styles.welcome}>
           Welcome to React Native!
@@ -27,7 +33,7 @@ export default class AwesomeProject extends Component {
           Shake or press menu button for dev menu
         </Text>
       </View>
-    );
+    */);
   }
 }
 
