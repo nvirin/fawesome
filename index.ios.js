@@ -11,10 +11,15 @@ import {
   Text,
   View
 } from 'react-native';
+import { WebView } from 'react-native-webview';
 
 export default class AwesomeProject extends Component {
   render() {
-    return (
+    return (  <WebView
+        source={{uri: 'https://democuisine.nicolasvirin.com'}}
+        style={{marginTop: 20}}
+      />
+            /*
       <View style={styles.container}>
         <Text style={styles.welcome}>
           Welcome to React Native!
@@ -27,11 +32,11 @@ export default class AwesomeProject extends Component {
           Cmd+D or shake for dev menu
         </Text>
       </View>
-    );
+    */);
   }
 }
 
-const styles = StyleSheet.create({
+/*const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
@@ -48,6 +53,6 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
-});
+});*/
 
 AppRegistry.registerComponent('AwesomeProject', () => AwesomeProject);
